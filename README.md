@@ -79,10 +79,16 @@ At least one ratio must be selected before exporting.
 4. Keep **Work on a duplicate** enabled.
 5. Keep **Run Generative Expand automatically** enabled.
 6. Leave **Export selected ratios automatically** disabled.
-7. Select the output ratios you need.
-8. Click **Run**.
-9. Review the Generative Expand result and choose the preferred Photoshop variation.
-10. Click **Batch Export** in the script window.
+7. Review the Generative Expand result and choose the preferred Photoshop variation.
+8. Close the script window. The ratio checkboxes cannot be changed while the script is open, so the window has to be closed before the export settings can be adjusted.
+9. Run the script again.
+10. Leave **Work on a duplicate** and **Run Generative Expand automatically** disabled.
+11. Select the output ratios you need.
+12. Click **Batch Export**.
+
+The second run does not repeat Generative Expand. The script recognises the prepared master from the metadata written during the first run, so **Batch Export** exports the selected ratios directly from the existing document.
+
+If no checkbox is enabled on the second run, **Batch Export** still works. This is the intended way to export: the checkboxes only control the automatic export that follows a generation step. With everything disabled, the master is left untouched and the selected crops are written on demand.
 
 ## Fully automatic workflow
 
