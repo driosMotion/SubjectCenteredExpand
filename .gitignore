@@ -1,0 +1,5 @@
+# Photoshop script output / test artifacts
+*_Adaptations/
+expandActions/
+*.atn
+.DS_Store
